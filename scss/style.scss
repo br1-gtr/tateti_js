@@ -1,0 +1,57 @@
+@import "var";
+@import "class-grid";
+@import "players";
+@import "data-config";
+
+body{
+    background-color: $mainColor;
+    font-family: 'Audiowide', cursive;
+    letter-spacing: 5px;
+    user-select: none;
+    //font-family: 'Bungee', cursive;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+main.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dashboard{
+        background-color: $mainColor;
+        width: 500px;
+        min-width: 500px;
+        height: auto;
+        padding: 10px;
+        color: rgba(0, 0, 0, 0); //textContent transparente para chequear status
+        .data-config{
+            min-height: 100px;
+            margin: 7px;
+        }
+        .btn{
+            min-width: 150px;
+            min-height: 150px;
+            margin: 7px;
+        }
+    }
+}
+.container :is(.dashboard, .data-config){
+    border-radius: $borderRadius;
+    box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.3), 3px 3px 3px rgba(94, 94, 94, 0.1);
+}
+
+.container :is(.neom){
+    border-radius: $borderRadius2;
+    box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.3), 3px 3px 3px rgba(94, 94, 94, 0.1);  
+}
+
+.neom-down{
+    border-radius: $borderRadius2;
+    box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.3) inset, 3px 3px 3px rgba(94, 94, 94, 0.1) inset;
+    transition: 1s;
+}
+
+@import "media-queries";

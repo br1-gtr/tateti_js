@@ -1,0 +1,41 @@
+@import "var";
+.data-config{
+    color: white!important;
+    text-shadow: 1px 2px 3px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    div{
+        margin: 10px;
+        border-radius: $borderRadius;
+        box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.3), 3px 3px 3px rgba(94, 94, 94, 0.1);
+        min-height: 50px;
+    }
+    .btn-reload{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .reload-icon{
+            width: 50px;
+            filter: invert(48%) sepia(50%) saturate(293%) hue-rotate(82deg) brightness(95%) contrast(85%);
+            text-shadow: 1px 2px 3px #5b8e67;
+        }  
+    }
+    .display-player{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.reload{
+    background-color: rgba(0, 0, 0, 0.50);
+    transition: 1s;
+}

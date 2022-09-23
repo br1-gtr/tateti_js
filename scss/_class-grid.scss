@@ -1,0 +1,18 @@
+.dashboard{
+    display: grid;
+
+    grid-template-areas:    'tab tab tab'
+                            'a1 a2 a3'
+                            'b1 b2 b3'
+                            'c1 c2 c3';
+}
+.data-config{grid-area: tab;}
+.a1{grid-area: a1;}
+.a2{grid-area: a2;}
+.a3{grid-area: a3;}
+.b1{grid-area: a4;}
+.b2{grid-area: a5;}
+.b3{grid-area: a6;}
+.c1{grid-area: a7;}
+.c2{grid-area: a8;}
+.c3{grid-area: a9;}

@@ -1,0 +1,44 @@
+@media screen and (max-width: 576px){
+    main.container{
+        width: 100vw;
+        min-width: 380px;
+        .dashboard{
+            width: 400px;
+            min-width: 100px;
+            height: auto;
+            padding: 10px;
+            margin: 0px 5px;
+            .data-config{
+                height: 30px;
+                margin: 3px;
+            }
+            .btn{
+                width: auto;
+                height: 100px;
+                min-width: 100px;
+                min-height: 100px;
+                margin: 4px;
+            }
+        }
+    }
+    .data-config{
+        font-size: 13px;
+        width: auto;
+        h1{
+            width: 100%;
+        }
+        div{
+            margin: 5px;
+            height: 20px;
+        }
+        .btn-reload{
+            width: 20%;
+            .reload-icon{
+                width: 50px;
+            }  
+        }
+        .display-player{
+            width: 70%;
+        }
+    }
+} //fin MQ
